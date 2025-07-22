@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>com.thierry.twigpathresolver</id>
+    <name>Twig Path Resolver</name>
+    <vendor>Thierry</vendor>
+
+    <description>
+        Permite Ctrl + Click em setView("...") para abrir a view .html correspondente.
+    </description>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <psi.referenceContributor implementation="com.thierry.twigpathresolver.TwigReferenceContributor"/>
+    </extensions>
+</idea-plugin>
