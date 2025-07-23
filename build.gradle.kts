@@ -4,16 +4,16 @@ plugins {
 }
 
 group = "com.thierry.twigpathresolver"
-version = "1.0-SNAPSHOT"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
 }
 
 intellij {
-    version.set("2023.3")
+    version.set("2024.2")
     type.set("PS")
-    plugins.set(listOf("com.jetbrains.php:233.11799.232", "com.jetbrains.twig"))
+    plugins.set(listOf("com.jetbrains.php", "com.jetbrains.twig"))
 }
 
 kotlin {

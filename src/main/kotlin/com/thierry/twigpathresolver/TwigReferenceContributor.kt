@@ -13,6 +13,10 @@ class TwigReferenceContributor : PsiReferenceContributor() {
                     element: PsiElement,
                     context: ProcessingContext
                 ): Array<PsiReference> {
+                    val file = element.containingFile
+                    if (file == null || !file.name.endsWith(".php")) {
+                        return PsiReference.EMPTY_ARRAY
+                    }
                     val text = element.text
                     if (text.startsWith("\"") || text.startsWith("'")) {
                         val value = text.trim('"', '\'')
