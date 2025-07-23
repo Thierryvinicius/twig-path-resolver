@@ -1,14 +1,14 @@
 <idea-plugin>
     <id>com.thierry.twigpathresolver</id>
     <name>Twig Path Resolver</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <vendor>Thierry</vendor>
 
     <description>
         Permite Ctrl + Click em setView("...") para abrir a view .html correspondente.
     </description>
 
-    <idea-version since-build="233" until-build="999.*"/>
+    <idea-version since-build="221" until-build="999.*"/>
     <depends>com.intellij.modules.lang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
